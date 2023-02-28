@@ -1,6 +1,6 @@
 package com.manning.salonapi.repository;
 
-import com.manning.salonapi.SalonServiceDetail;
+import com.manning.salonapi.models.SalonServiceDetail;
 
 public interface SalonServiceDetailRepository {
     Iterable<SalonServiceDetail> findAll();

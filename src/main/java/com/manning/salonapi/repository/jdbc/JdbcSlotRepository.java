@@ -1,6 +1,6 @@
 package com.manning.salonapi.repository.jdbc;
 
-import com.manning.salonapi.Slot;
+import com.manning.salonapi.models.Slot;
 import com.manning.salonapi.repository.SlotRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;

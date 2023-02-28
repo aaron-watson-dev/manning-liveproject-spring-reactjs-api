@@ -1,4 +1,4 @@
-package com.manning.salonapi;
+package com.manning.salonapi.models;
 
 import lombok.Data;
 
