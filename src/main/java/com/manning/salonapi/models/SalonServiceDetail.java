@@ -1,21 +1,23 @@
 package com.manning.salonapi.models;
 
-import lombok.*;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import org.springframework.data.annotation.CreatedDate;
-
-import java.util.Date;
+import java.io.Serializable;
+import java.time.Instant;
 
 
 @Data
 @NoArgsConstructor
 @ToString
 @Entity
-public class SalonServiceDetail {
+public class SalonServiceDetail implements Serializable {
 
    @Id
    @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,6 +29,6 @@ public class SalonServiceDetail {
    private Integer timeInMinutes;
 
    @CreatedDate
-   private Long createdAt;
+   private Instant createdAt;
 
 }

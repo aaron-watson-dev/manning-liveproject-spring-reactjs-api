@@ -1,13 +1,11 @@
-package com.manning.salonapi.models;
+package com.manning.salonapi.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.context.annotation.Bean;
-import java.util.Date;
 
 @Configuration
-@PropertySource("application.properties")
+@PropertySource("classpath:application.properties")
 public class SalonDetails {
     @Value("${salon.name}")
     private String name;
